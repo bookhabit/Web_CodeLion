@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Sans+KR:wght@100&display=swap');
+/*구글 폰트 임포트 */
+
+* {
+    font-family: 'Noto Sans KR';
+    /*다운받은 폰트명 */
+    font-size: 20px;
+}
+
+.mainTitle {
+    margin: 25px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 26px;
+    color: gray;
+    border-bottom: 1px solid black;
+}
+
+div {
+    /*margin border padding */
+    border: 1px solid #ebebeb;
+    box-shadow: 0px 1px 20px 0px rgba(115, 80, 212, 0.4);
+    margin: 15px;
+    /* x크기 y크기 흐림정도 번짐정도 색깔 */
+}
+
+.mainSpace {
+    background-color: white;
+    height: auto;
+}
+
+
+.buttonSection {
+    float: right;
+    margin: 20px;
+}
+
+
+.titleBox {
+    margin-top: 15px;
+}
+
+.mainBox {
+    margin-left: 190px;
+    margin-top: 30px;
+}
+
+.categorybox {
+    width: 170px;
+    float: left;
+    font-size: 10px;
+    margin-bottom: 60px;
+    padding-bottom: 340px;
+}
+
+.categorybox ol ul li {
+    font-size: 20px;
+    ;
+}
+
+.mainImg {
+    width: 100px;
+}
+
+.imgSection {
+    float: right;
+    margin: 15px;
+    padding-top: 60px;
+}
+
+footer {
+    text-align: center;
+    /*텍스트정렬*/
+}
