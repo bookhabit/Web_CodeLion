@@ -1,0 +1,18 @@
+* {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.all {
+    background-color: black;
+}
+
+.introButton {
+    float: left;
+}
+
+.footerBox {
+    color: blue;
+    background-color: black;
+}

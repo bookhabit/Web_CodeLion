@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>쇼핑몰</title>
+</head>
+
+<body>
+    <article class="all">
+        <div class="ButtonBox_home">
+            <input class="homeButton" type="image" name="home" src="png/mutsinsa.png" width="100%" height="auto"
+                onclick="Go_home()">
+        </div>
+
+        <div>
+            <input class="introButton" type="image" name="intro" src="png/introduce.png" width="50%" height="auto"
+                onclick="Go_intro()" onmouseover="this.src='png/introduce_dark.png'"
+                onmouseout="this.src='png/introduce.png'">
+        </div>
+
+        <div>
+            <input class="goodsButton" type="image" name="goods" src="png/goods.png" width="50%" height="auto"
+                onclick="Go_goods()" onmouseover="this.src='png/goods_dark.png'" onmouseout="this.src='png/goods.png'">
+        </div>
+
+        <div class="footerBox">
+            <footer>
+                멋사 프론트 세션
+            </footer>
+            <footer>
+                이학관 216호
+            </footer>
+        </div>
+    </article>
+</body>
+<script>
+    function Go_home() {
+        location.href = "index.html";
+    }
+    function Go_intro() {
+        location.href = "introduce.html";
+    }
+    function Go_goods() {
+        location.href = "goods.html"
+    }
+
+</script>
+<script type="text/javascript" src="javascript/move.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61e926abdace3f80"></script>
+
+</html>
