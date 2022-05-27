@@ -31,8 +31,11 @@
     <!-- 결과화면 -->
     <article class="result">
         <img id="img" src="lion.jpg" class="rounded-circle mt-5" alt="사자">
+        <h1 id="users_MBTI" class="text-center mt-5">당신의 MBTI는: </h1>
         <h2 id="animal" class="text-center mt-5">동물이름</h2>
         <h3 id="explain" class="text-center mt-5">설명</h3>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <div class="share addthis_inline_share_toolbox"></div>
     </article>
 
     <input type="hidden" id="EI" value="0"> <!-- 점수 저장할 곳 -->
@@ -102,17 +105,17 @@
                 $(".result").show();
                 // MBTI 판단하는 로직
                 var mbti = "";
-                // if ($("#EI").val() < 2){
-                //     mbti = mbti+ "I"
-                // }else{
-                //     mbti = mbti + "E" }
-                //  코드가 너무 길어지니까 삼항연산자 사용하기
                 // 삼항 연산자 (조건식) ? 참 : 거짓
                 ($("#EI").val() < 2) ? mbti += "I" : mbti += "E";
                 ($("#SN").val() < 2) ? mbti += "N" : mbti += "S";
                 ($("#TF").val() < 2) ? mbti += "F" : mbti += "T";
                 ($("#JP").val() < 2) ? mbti += "P" : mbti += "J";
-                alert(mbti);
+                console.log(mbti)
+                //MBTI 결과
+                $("#users_MBTI").html("당신의 MBTI는:" + mbti)
+                $("#img").attr("src", result[mbti]["img"]);
+                $("#animal").html(result[mbti]["animal"]);
+                $("#explain").html(result[mbti]["explain"]);
             } else {
                 $(".progress-bar").attr('style', "width:calc(100/12*" + num + "%") // attr 속성변경
                 $("#title").html(q[num]["title"]);
@@ -123,6 +126,8 @@
             }
         }
     </script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-628dcac097c820b5"></script>
 </body>
 
 </html>
