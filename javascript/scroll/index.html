@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      body {
+        font-family: "Do Hyeon", sans-serif;
+      }
+      .blue {
+        width: 0px;
+        height: 5px;
+        background-color: rgb(92, 100, 254);
+      }
+      .lyrics {
+        width: 250px;
+        height: 150px;
+        overflow-y: scroll;
+        background-color: rgb(192, 224, 255);
+      }
+    </style>
+    <div class="blue"></div>
+    <div class="lyrics">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+        explicabo voluptatem voluptate quasi quos, earum labore unde quisquam
+        voluptas dolorum provident mollitia voluptatibus laborum accusantium
+        dolorem quam veritatis nam maxime! Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Blanditiis explicabo voluptatem voluptate
+        quasi quos, earum labore unde quisquam voluptas dolorum provident
+        mollitia voluptatibus laborum accusantium dolorem quam veritatis nam
+        maxime!
+      </p>
+    </div>
+    <script>
+      let bar = document.querySelector(".blue");
+      let lyrics = document.querySelector(".lyrics");
+
+      lyrics.addEventListener("scroll", () => {
+        let scrollTop = lyrics.scrollTop;
+        let scrollHeight = lyrics.scrollHeight - lyrics.clientHeight;
+        let per = scrollTop / scrollHeight;
+        bar.style.width = `${per * 250}px`;
+      });
+    </script>
+  </body>
+</html>

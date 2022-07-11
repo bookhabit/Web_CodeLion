@@ -1,0 +1,14 @@
+.box{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.purple{
+    background-color: rgb(84, 38, 131);
+}
+
+.yellow{
+    background-color: yellow;
+}
