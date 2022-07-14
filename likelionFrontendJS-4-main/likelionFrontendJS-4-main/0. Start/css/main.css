@@ -1,0 +1,22 @@
+#main{
+    background-color: whitesmoke;
+    text-align: center;
+    width: 80%;
+    border-radius: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.starBtn{
+    padding: 13px 50px;
+    border: 3px solid orange;
+    color: orange;
+    border-radius: 8px;
+}
+
+.starBtn:hover,.starBtn:active{
+    background-color: orange;
+    color: whitesmoke;
+}
